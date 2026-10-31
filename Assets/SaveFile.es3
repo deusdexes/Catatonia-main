@@ -1,0 +1,26 @@
+{
+	"playerSave.es3" : {
+		"__type" : "GameData,Assembly-CSharp",
+		"value" : {
+			"currentSceneName" : "1level",
+			"playerPosition" : {
+				"x" : -51.1561928,
+				"y" : 1.06970537,
+				"z" : -80.8154449
+			},
+			"playerHealth" : 100,
+			"playerLevel" : 1,
+			"inventoryItems" : [
+				
+			],
+			"completedQuests" : {
+			},
+			"gameSettings" : {
+				"masterVolume" : 1,
+				"sfxVolume" : 1,
+				"musicVolume" : 1,
+				"mouseSensitivity" : 0.5
+			}
+		}
+	}
+}

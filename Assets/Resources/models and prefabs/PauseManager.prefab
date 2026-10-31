@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1618922921695990547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6237391995571884613}
+  - component: {fileID: 2791865701101705503}
+  - component: {fileID: 409869746489078741}
+  m_Layer: 0
+  m_Name: PauseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6237391995571884613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618922921695990547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 10, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2791865701101705503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618922921695990547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de3180971a84264fbd740a12c653db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pauseMenuPanel: {fileID: 0}
+  resumeButton: {fileID: 0}
+  restartButton: {fileID: 0}
+  quitButton: {fileID: 0}
+  mainMenuScene: MainMenu
+  showCursorOnPause: 1
+--- !u!114 &409869746489078741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618922921695990547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2516822fc9cd7044db5b43270c4fecde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteManager
+  notePanel: {fileID: 0}
+  noteText: {fileID: 0}
+  journalPanel: {fileID: 0}
+  journalContentParent: {fileID: 0}
+  journalEntryPrefab: {fileID: 8273497729913956585, guid: efb460288f82c2e49a0079089446a28a, type: 3}
+  playerMovementScript: {fileID: 0}
+  playerMovementRequiresDisable: 1
+  cursorRequiresToggle: 1
+  allGameNotes:
+  - {fileID: 11400000, guid: f2604ce694b60d141b8953bbac970b11, type: 2}
+  - {fileID: 11400000, guid: eae46ff89350bd44fbd35d9c659c80a4, type: 2}
+  - {fileID: 11400000, guid: 98b0ddec541eba3408d3323bd4b71ece, type: 2}
+  - {fileID: 11400000, guid: c721f2adca60f114287c66e88c86961c, type: 2}
+  - {fileID: 11400000, guid: 5a7fdcd8b75110b4398fda02e489af6c, type: 2}
+  - {fileID: 11400000, guid: 3eece1ecf0d55ee4f9372ce15e025f0e, type: 2}
+  - {fileID: 11400000, guid: f888f31c4c0b39342a1893178302ee2d, type: 2}

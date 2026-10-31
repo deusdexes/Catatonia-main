@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6112142843041675795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2884043829628676300}
+  - component: {fileID: 7832606379643915495}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2884043829628676300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112142843041675795}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.94279265, z: -0, w: 0.33337998}
+  m_LocalPosition: {x: 6.49178, y: -0.56425, z: 11.561623}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7832606379643915495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112142843041675795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1fd944853abd14eaa3c228aaafcef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterMusicController
+  monsterController: {fileID: 0}
+  idleAudioSource: {fileID: 0}
+  activeAudioSource: {fileID: 0}
+  idleMusicClip: {fileID: 8300000, guid: 41f60aa14a31e7042a7707d158bd3a97, type: 3}
+  activeMusicClip: {fileID: 8300000, guid: d254c4f55eadc8f4bac2cde85a927b2f, type: 3}
+  idleMaxVolume: 0.2
+  activeMaxVolume: 0.161
+  crossfadeDuration: 3

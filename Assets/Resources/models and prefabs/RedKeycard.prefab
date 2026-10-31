@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6170099130863609275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8769157690066831937}
+  - component: {fileID: 1649365966221687105}
+  - component: {fileID: 7091216657525310068}
+  - component: {fileID: 2451464159693174170}
+  - component: {fileID: 1738454313286740270}
+  m_Layer: 9
+  m_Name: RedKeycard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8769157690066831937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170099130863609275}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -51.64, y: 1.1779997, z: -57.231}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1385359091614367758}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1649365966221687105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170099130863609275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea07839bf1e23a5448a50a495fc6377b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeycardItem
+  itemName: RedKeycard
+  itemDescription: RedKeycard
+  itemIcon: {fileID: 21300000, guid: 8de720169f06e8241a446f65b60e6db3, type: 3}
+  canBePickedUp: 1
+  keycardData: {fileID: 11400000, guid: 471900dd4dc26594bbb66d101c093403, type: 2}
+  itemRenderer: {fileID: 248511739746302817}
+--- !u!114 &7091216657525310068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170099130863609275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835c83df78a4fbb4584135ceda28cacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
+  itemName: RedKeycard
+--- !u!65 &2451464159693174170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170099130863609275}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.45, y: 0.33, z: 0.39}
+  m_Center: {x: -0.14, y: 0.19, z: -0.12}
+--- !u!114 &1738454313286740270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170099130863609275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d5510619679a64c8fc2d1e5e87d0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OutlineEffect
+  outlineMaterial: {fileID: 2100000, guid: 0927869d02dbf6f4e86fbb6d0c3fba44, type: 2}
+  outlineWidth: 0.02
+  outlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  includeChildrenRenderers: 1
+--- !u!1001 &1491660960311879653
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8769157690066831937}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1389699
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10500002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.005180359
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+      propertyPath: m_Name
+      value: Prop_KeyCard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+--- !u!23 &248511739746302817 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+  m_PrefabInstance: {fileID: 1491660960311879653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1385359091614367758 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48525e135403e5c4b9646addceb4577d, type: 3}
+  m_PrefabInstance: {fileID: 1491660960311879653}
+  m_PrefabAsset: {fileID: 0}

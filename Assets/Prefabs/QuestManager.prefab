@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3093106000501585710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9063367782548158111}
+  - component: {fileID: 3926508446874811526}
+  - component: {fileID: 4497653269847388877}
+  - component: {fileID: 1769915391189540915}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9063367782548158111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093106000501585710}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3926508446874811526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093106000501585710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fcb9e94d96b04448601cb9d5c2ffae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestGameplayModule
+  creatureController: {fileID: 0}
+  timerEffects:
+  - objectiveID: QUEST_OPEN_KEYCARD_DOOR
+    timerReductionConfig: {fileID: 11400000, guid: 96125c2cf7d232c4e8856894fe9c4343, type: 2}
+  - objectiveID: QUEST_OPEN_ENGINEERING
+    timerReductionConfig: {fileID: 11400000, guid: 96125c2cf7d232c4e8856894fe9c4343, type: 2}
+  - objectiveID: QUEST_START_GENERATOR
+    timerReductionConfig: {fileID: 11400000, guid: 13bc0773d964d37428435b0158ad1f84, type: 2}
+  - objectiveID: ROBOT_ASSEMBLY
+    timerReductionConfig: {fileID: 11400000, guid: 0a4d2a740c9566945bc7d99316aa5c0c, type: 2}
+  - objectiveID: QUEST_CART
+    timerReductionConfig: {fileID: 11400000, guid: 0a4d2a740c9566945bc7d99316aa5c0c, type: 2}
+  - objectiveID: QUEST_KPP
+    timerReductionConfig: {fileID: 11400000, guid: 13bc0773d964d37428435b0158ad1f84, type: 2}
+--- !u!114 &4497653269847388877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093106000501585710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96429d7b2cb7b2242912a2c15ed2791e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystem.QuestManager
+  activeObjectives:
+  - objectiveID: QUEST_OPEN_KEYCARD_DOOR
+    displayName: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0434\u0432\u0435\u0440\u044C"
+    isCompleted: 0
+    groupID: 
+    groupTitle: 
+  - objectiveID: QUEST_OPEN_ENGINEERING
+    displayName: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0434\u0432\u0435\u0440\u044C
+      \u0432 \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u043D\u0443\u044E"
+    isCompleted: 0
+    groupID: 
+    groupTitle: 
+  - objectiveID: QUEST_START_GENERATOR
+    displayName: "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    isCompleted: 0
+    groupID: 
+    groupTitle: 
+  - objectiveID: PICKUP_RH
+    displayName: "\u041D\u0430\u0439\u0442\u0438 \u043F\u0440\u0430\u0432\u0443\u044E
+      \u0440\u0443\u043A\u0443"
+    isCompleted: 0
+    groupID: ROBOT_ASSEMBLY
+    groupTitle: "\u0421\u043E\u0431\u0440\u0430\u0442\u044C \u0440\u043E\u0431\u043E\u0442\u0430 "
+  - objectiveID: PICKUP_RL
+    displayName: "\u041D\u0430\u0439\u0442\u0438 \u043F\u0440\u0430\u0432\u0443\u044E
+      \u043D\u043E\u0433\u0443"
+    isCompleted: 0
+    groupID: ROBOT_ASSEMBLY
+    groupTitle: 
+  - objectiveID: PICKUP_HEAD
+    displayName: "\u041D\u0430\u0439\u0442\u0438 \u0433\u043E\u043B\u043E\u0432\u0443"
+    isCompleted: 0
+    groupID: ROBOT_ASSEMBLY
+    groupTitle: 
+  - objectiveID: QUEST_ATTACH_ROBOT_PARTS
+    displayName: "\u0421\u043E\u0431\u0440\u0430\u0442\u044C \u0440\u043E\u0431\u043E\u0442\u0430"
+    isCompleted: 0
+    groupID: 
+    groupTitle: 
+  - objectiveID: QUEST_CART
+    displayName: "\u0414\u043E\u0432\u0435\u0437\u0442\u0438 \u0440\u043E\u0431\u043E\u0442\u0430
+      \u043D\u0430 \u0442\u0435\u043B\u0435\u0436\u043A\u0435 \u0432 \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u043D\u0443\u044E"
+    isCompleted: 0
+    groupID: 
+    groupTitle: 
+  - objectiveID: QUEST_KPP
+    displayName: "\u0420\u0435\u0448\u0438\u0442\u044C \u0433\u043E\u043B\u043E\u0432\u043E\u043B\u043E\u043C\u043A\u0443,
+      \u0447\u0442\u043E\u0431\u044B \u0432\u043A\u043B\u044E\u0447\u0438\u0442\u044C
+      \u0442\u0435\u0440\u043C\u0438\u043D\u0430\u043B"
+    isCompleted: 0
+    groupID: 
+    groupTitle: 
+--- !u!114 &1769915391189540915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093106000501585710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275b0011eca99c144a0a260b190092e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestUIHandler
+  questListContainer: {fileID: 0}
+  questMarkerPrefab: {fileID: 7730971536338283139, guid: a868627643ecadf49a35f07170b73680, type: 3}
+  fadeInTime: 0.5
+  fadeOutTime: 0.3
+  completedDuration: 1
+  completedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  subObjectiveIndent: 20
